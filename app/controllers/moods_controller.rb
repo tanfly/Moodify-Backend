@@ -1,8 +1,6 @@
 class MoodsController < ApplicationController
   before_action :set_mood, only: [:show, :edit, :update, :destroy]
 
-  # GET /moods
-  # GET /moods.json
   def index
     @moods = Mood.all
   end

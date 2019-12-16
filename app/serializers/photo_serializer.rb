@@ -1,4 +1,5 @@
 class PhotoSerializer
   include FastJsonapi::ObjectSerializer
-  attributes 
+  attributes :photo, :description, :mood
+  belongs_to :mood
 end

@@ -1,4 +1,5 @@
 class MoodSerializer
   include FastJsonapi::ObjectSerializer
-  attributes 
+  attributes :name, :description, :photo, :user_id
+  has_one :photo
 end
